@@ -2,11 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 
-def init(request):
-    return HttpResponse("PRUEBA")
+def index(request):
+    return render(request, 'index.html')
 
 def about(request):
-    return HttpResponse("about")
+    return render(request, 'about.html')
 
 def card(request):
-    return HttpResponse("Card")
+    return render(request, 'card/card.html')
